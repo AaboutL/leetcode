@@ -1,4 +1,4 @@
-# Install script for directory: /home/slam/leetcode
+# Install script for directory: /home/aal/workspace/leetcode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/slam/leetcode/cmake-build-debug/samples/cmake_install.cmake")
+  include("/home/aal/workspace/leetcode/cmake-build-debug/samples/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/slam/leetcode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aal/workspace/leetcode/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
