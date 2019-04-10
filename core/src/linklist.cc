@@ -28,18 +28,44 @@ void LinkList::travese() {
     }while(ptmp !=NULL);
 }
 
-Node* LinkList::inverse_loop() {
-    if(this->head_ == NULL){
+void LinkList::inverse_loop() {
+    if(this->head_ == nullptr){
         std::cout << "List is NULL" << std::endl;
-        return NULL;
+        return;
     }
-    Node* prev = NULL;
+    Node* prev = nullptr;
     Node* pcur = this->head_->pnext_;
-    while(pcur != NULL){
+    while(pcur != nullptr){
         Node* ptmp = pcur->pnext_;
         pcur->pnext_ = prev;
         prev = pcur;
         pcur = ptmp;
     }
-    return prev;
+    Node* pr_head = new Node;
+    pr_head->value_ = 0;
+    pr_head->pnext_ = prev;
+    this->head_ = pr_head;
+//    return pr_head;
+}
+
+void LinkList::inverse_recursive(){
+    if(this->head_ == nullptr){
+        std::cout << "List is NULL" << std::endl;
+        return;
+    }
+    Node* p = inverse(this->head_->pnext_);
+    Node* pr_head = new Node;
+    pr_head->value_ = 0;
+    pr_head->pnext_ = p;
+    this->head_ = pr_head;
+
+}
+
+Node* LinkList::inverse(Node* head){
+    if (head == nullptr || head->pnext_ == nullptr)
+        return head;
+    Node* p = inverse(head->pnext_);
+    head->pnext_->pnext_ = head;
+    head->pnext_=nullptr;
+    return p;
 }

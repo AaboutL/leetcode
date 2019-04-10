@@ -15,15 +15,20 @@ public:
         head_->value_ = 0;
         head_->pnext_ = NULL;
     }
-    LinkList(LinkList& ll):head_(p){}
+    LinkList(Node* p){
+        this->head_ = p;
+    }
 
     ~LinkList(){delete head_;}
 
     void create_linklist(const std::vector<int>& nums);
     void travese();
-    Node* inverse_loop();
+    void inverse_loop();
     void inverse_recursive();
+
 private:
+    Node* inverse(Node* head);
+
     Node *head_;
 };
 

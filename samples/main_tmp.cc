@@ -15,7 +15,10 @@ int main(int argc, char** argv) {
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
 
     ll.travese();
-    Node* pr = ll.inverse_loop();
+    std::cout << std::endl;
+    ll.inverse_recursive();
+//    LinkList l2(pr);
+    ll.travese();
 
     std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
     std::chrono::duration<double> dur = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);

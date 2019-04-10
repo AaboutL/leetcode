@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -fPIC -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/slam/leetcode/core/include 
+CXX_INCLUDES = -I/home/aal/workspace/leetcode/core/include 
 

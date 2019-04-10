@@ -1,4 +1,4 @@
-# Install script for directory: /home/slam/leetcode/core
+# Install script for directory: /home/aal/workspace/leetcode/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
