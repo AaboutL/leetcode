@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/main.cc.o"
+  "CMakeFiles/main.dir/main_leetcode.cc.o"
   "main.pdb"
   "main"
 )

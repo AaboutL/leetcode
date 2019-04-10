@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../samples/../core/include/linklist.h
+iostream
+-
+node.h
+../samples/../core/include/node.h
+
+../samples/../core/include/node.h
+iostream
+-
+vector
+-
+
+/home/slam/leetcode/samples/main_tmp.cc
+iostream
+-
+vector
+-
+unordered_map
+-
+algorithm
+-
+chrono
+-
+linklist.h
+/home/slam/leetcode/samples/linklist.h
+

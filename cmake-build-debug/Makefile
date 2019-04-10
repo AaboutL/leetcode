@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/aal/bin/clion-2019.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/aal/bin/clion-2019.1/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aal/workspace/leetcode
+CMAKE_SOURCE_DIR = /home/slam/leetcode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aal/workspace/leetcode/cmake-build-debug
+CMAKE_BINARY_DIR = /home/slam/leetcode/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/aal/workspace/leetcode/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/aal/bin/clion-2019.1/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/aal/bin/clion-2019.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aal/workspace/leetcode/cmake-build-debug/CMakeFiles /home/aal/workspace/leetcode/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/slam/leetcode/cmake-build-debug/CMakeFiles /home/slam/leetcode/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aal/workspace/leetcode/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/slam/leetcode/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named core
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 core
+.PHONY : core
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f samples/CMakeFiles/main.dir/build.make samples/CMakeFiles/main.dir/build
-.PHONY : main/fast
+core/fast:
+	$(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/build
+.PHONY : core/fast
+
+#=============================================================================
+# Target rules for targets named main_leetcode
+
+# Build rule for target.
+main_leetcode: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_leetcode
+.PHONY : main_leetcode
+
+# fast build rule for target.
+main_leetcode/fast:
+	$(MAKE) -f samples/CMakeFiles/main_leetcode.dir/build.make samples/CMakeFiles/main_leetcode.dir/build
+.PHONY : main_leetcode/fast
+
+#=============================================================================
+# Target rules for targets named main_tmp
+
+# Build rule for target.
+main_tmp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_tmp
+.PHONY : main_tmp
+
+# fast build rule for target.
+main_tmp/fast:
+	$(MAKE) -f samples/CMakeFiles/main_tmp.dir/build.make samples/CMakeFiles/main_tmp.dir/build
+.PHONY : main_tmp/fast
 
 # Help Target
 help:
@@ -131,7 +157,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
+	@echo "... core"
+	@echo "... main_leetcode"
+	@echo "... main_tmp"
 .PHONY : help
 
 
