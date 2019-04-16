@@ -16,19 +16,26 @@ void LinkList::create_linklist(const std::vector<int>& nums){
     }
 }
 
-void LinkList::travese() {
+Node* LinkList::get_head() const{
+    return this->head_;
+}
+
+int LinkList::travese() const {
+    int length = 0;
     if (this->head_ == NULL){
         std::cout << "empty list" << std::endl;
-        return;
+        return length;
     }
     Node* ptmp = this->head_->pnext_;
     do{
+        length++;
         std::cout << ptmp->value_ << std::endl;
         ptmp = ptmp->pnext_;
     }while(ptmp !=NULL);
+    return length;
 }
 
-void LinkList::inverse_loop() {
+void LinkList::inverse_loop() { // 就地逆置
     if(this->head_ == nullptr){
         std::cout << "List is NULL" << std::endl;
         return;
@@ -48,7 +55,7 @@ void LinkList::inverse_loop() {
 //    return pr_head;
 }
 
-void LinkList::inverse_recursive(){
+void LinkList::inverse_recursive(){ // 递归的方法
     if(this->head_ == nullptr){
         std::cout << "List is NULL" << std::endl;
         return;
@@ -65,7 +72,94 @@ Node* LinkList::inverse(Node* head){
     if (head == nullptr || head->pnext_ == nullptr)
         return head;
     Node* p = inverse(head->pnext_);
-    head->pnext_->pnext_ = head;
+    head->pnext_->pnext_ = head; // 从后尾向头逆置，比如a->b->c->d<-e<-f，d之后的都已经逆置，之前的都没有逆置
     head->pnext_=nullptr;
     return p;
+}
+
+void LinkList::inverse_between(int m, int n) {
+    /*
+     * 注意几个结点的设置，pre_head是逆置部分之前的结点，
+     * inversed_list_tail是逆置部分的第一个结点，也是逆置之后的最后一个结点
+     * new_head：是逆置部分的在逆置完成后的头结点
+     * pcur：用于遍历链表，并记录逆置部分之后的第一个结点
+     * */
+    int change_len = n - m + 1;
+    Node* pre_head = nullptr;
+    Node* result = this->head_;
+    Node* pcur = this->head_->pnext_;
+    while(this->head_ && --m){
+        pre_head = pcur;
+        pcur = pcur->pnext_;
+    }
+    Node* inversed_list_tail = pcur;
+    Node* new_head = nullptr;
+    while(pcur && change_len) {
+        Node* ptmp = pcur->pnext_;
+        pcur->pnext_ = new_head;
+        new_head = pcur;
+        pcur = ptmp;
+        change_len--;
+    }
+    inversed_list_tail->pnext_ = pcur;
+    if(pre_head){
+        pre_head->pnext_ = new_head;
+    }
+    else{
+        result->pnext_ = new_head;
+    }
+}
+
+void LinkList::merge_two_lists(const LinkList& l1, const LinkList& l2){
+    Node* pre = this->head_;
+    Node* p1_cur = l1.get_head()->pnext_;
+    Node* p2_cur = l2.get_head()->pnext_;
+    while(p1_cur && p2_cur){
+        if(p1_cur->value_ < p2_cur->value_){
+            pre->pnext_ = p1_cur;
+            p1_cur = p1_cur->pnext_;
+        }
+        else {
+            pre->pnext_ = p2_cur;
+            p2_cur = p2_cur->pnext_;
+        }
+        pre = pre->pnext_;
+        if(p1_cur){
+            pre->pnext_ = p1_cur;
+        }
+        if(p2_cur){
+            pre->pnext_ = p2_cur;
+        }
+    }
+}
+
+Node* LinkList::get_intersection_node(const LinkList &l1, const LinkList &l2) {
+    int l1_length = l1.travese();
+    int l2_length = l2.travese();
+    Node *ptmp1=nullptr,  *ptmp2=nullptr;
+    ptmp1 = l1.get_head()->pnext_;
+    ptmp2 = l2.get_head()->pnext_;
+    if(l1_length > l2_length){
+        int delta = l1_length - l2_length;
+        while(ptmp1 && delta){
+            ptmp1 = ptmp1->pnext_;
+            delta--;
+        }
+    }
+    else{
+        int delta = l2_length - l1_length;
+        Node* ptmp2 = l2.get_head()->pnext_;
+        while(ptmp2 && delta){
+            ptmp2 = ptmp2->pnext_;
+            delta--;
+        }
+    }
+    while(ptmp1 && ptmp2){
+        if(ptmp1 == ptmp2){
+            return ptmp1;
+        }
+        ptmp1 = ptmp1->pnext_;
+        ptmp2 = ptmp2->pnext_;
+    }
+    return nullptr;
 }

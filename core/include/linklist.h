@@ -21,10 +21,14 @@ public:
 
     ~LinkList(){delete head_;}
 
+    Node* get_head()const;
     void create_linklist(const std::vector<int>& nums);
-    void travese();
+    int travese()const;
     void inverse_loop();
     void inverse_recursive();
+    void inverse_between(int m, int n);
+    void merge_two_lists(const LinkList& l1, const LinkList& l2);
+    Node* get_intersection_node(const LinkList& l1, const LinkList& l2);
 
 private:
     Node* inverse(Node* head);
