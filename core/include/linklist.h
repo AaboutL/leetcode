@@ -11,7 +11,7 @@
 class LinkList {
 public:
     LinkList(){
-        head_ = new Node; // 头结点为空
+        head_ = new Node(); // 头结点为空
         head_->value_ = 0;
         head_->pnext_ = NULL;
     }
@@ -23,12 +23,15 @@ public:
 
     Node* get_head()const;
     void create_linklist(const std::vector<int>& nums);
+    void create_linklist(const std::vector<Node*>& nodes);
     int travese()const;
     void inverse_loop();
     void inverse_recursive();
     void inverse_between(int m, int n);
     void merge_two_lists(const LinkList& l1, const LinkList& l2);
     Node* get_intersection_node(const LinkList& l1, const LinkList& l2);
+    Node* detect_cycle();
+    void partition(int val);
 
 private:
     Node* inverse(Node* head);

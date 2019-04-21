@@ -10,6 +10,13 @@
 
 class Node{
 public:
+    Node(){}
+
+    Node(int value){
+        this->value_ = value;
+        this->pnext_ = nullptr;
+    }
+
     int value_;
     Node *pnext_;
 };

@@ -8,202 +8,202 @@
 		<Option virtualFolders="CMake Files\;CMake Files\core\;CMake Files\samples\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="core">
-				<Option output="/home/aal/workspace/leetcode/cmake-build-debug/core/libcore.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug/core"/>
+				<Option output="/home/slam/leetcode/cmake-build-debug/core/libcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug/core"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/aal/workspace/leetcode/core/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/slam/leetcode/core/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 core"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 core"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="core/fast">
-				<Option output="/home/aal/workspace/leetcode/cmake-build-debug/core/libcore.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug/core"/>
+				<Option output="/home/slam/leetcode/cmake-build-debug/core/libcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug/core"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/aal/workspace/leetcode/core/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/slam/leetcode/core/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 core/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 core/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/core/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main_leetcode">
-				<Option output="/home/aal/workspace/leetcode/cmake-build-debug/samples/main_leetcode" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug/samples"/>
+				<Option output="/home/slam/leetcode/cmake-build-debug/samples/main_leetcode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug/samples"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/aal/workspace/leetcode/samples/../core/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/slam/leetcode/samples/../core/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_leetcode"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_leetcode"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main_leetcode/fast">
-				<Option output="/home/aal/workspace/leetcode/cmake-build-debug/samples/main_leetcode" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug/samples"/>
+				<Option output="/home/slam/leetcode/cmake-build-debug/samples/main_leetcode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug/samples"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/aal/workspace/leetcode/samples/../core/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/slam/leetcode/samples/../core/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_leetcode/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_leetcode/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main_tmp">
-				<Option output="/home/aal/workspace/leetcode/cmake-build-debug/samples/main_tmp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug/samples"/>
+				<Option output="/home/slam/leetcode/cmake-build-debug/samples/main_tmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug/samples"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/aal/workspace/leetcode/samples/../core/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/slam/leetcode/samples/../core/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_tmp"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_tmp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main_tmp/fast">
-				<Option output="/home/aal/workspace/leetcode/cmake-build-debug/samples/main_tmp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/aal/workspace/leetcode/cmake-build-debug/samples"/>
+				<Option output="/home/slam/leetcode/cmake-build-debug/samples/main_tmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/slam/leetcode/cmake-build-debug/samples"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/aal/workspace/leetcode/samples/../core/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/slam/leetcode/samples/../core/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_tmp/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/aal/workspace/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 main_tmp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/slam/leetcode/cmake-build-debug/samples/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/aal/workspace/leetcode/core/include/linklist.h">
+		<Unit filename="/home/slam/leetcode/core/include/linklist.h">
 			<Option target="core"/>
 		</Unit>
-		<Unit filename="/home/aal/workspace/leetcode/core/include/node.h">
+		<Unit filename="/home/slam/leetcode/core/include/node.h">
 			<Option target="core"/>
 		</Unit>
-		<Unit filename="/home/aal/workspace/leetcode/core/src/linklist.cc">
+		<Unit filename="/home/slam/leetcode/core/src/linklist.cc">
 			<Option target="core"/>
 		</Unit>
-		<Unit filename="/home/aal/workspace/leetcode/samples/main_leetcode.cc">
+		<Unit filename="/home/slam/leetcode/samples/main_leetcode.cc">
 			<Option target="main_leetcode"/>
 		</Unit>
-		<Unit filename="/home/aal/workspace/leetcode/samples/main_tmp.cc">
+		<Unit filename="/home/slam/leetcode/samples/main_tmp.cc">
 			<Option target="main_tmp"/>
 		</Unit>
-		<Unit filename="/home/aal/workspace/leetcode/CMakeLists.txt">
+		<Unit filename="/home/slam/leetcode/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/aal/workspace/leetcode/core/CMakeLists.txt">
+		<Unit filename="/home/slam/leetcode/core/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\core\"/>
 		</Unit>
-		<Unit filename="/home/aal/workspace/leetcode/samples/CMakeLists.txt">
+		<Unit filename="/home/slam/leetcode/samples/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\samples\"/>
 		</Unit>
 	</Project>

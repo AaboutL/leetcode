@@ -2,6 +2,8 @@
 // Created by slam on 19-4-10.
 //
 
+#include <linklist.h>
+
 #include "linklist.h"
 
 void LinkList::create_linklist(const std::vector<int>& nums){
@@ -13,6 +15,14 @@ void LinkList::create_linklist(const std::vector<int>& nums){
         pnew->pnext_ = NULL;
         ptemp->pnext_ = pnew;
         ptemp = pnew;
+    }
+}
+
+void LinkList::create_linklist(const std::vector<Node*>& nodes){
+    Node* ptemp = this->head_;
+    for (int i = 0; i < nodes.size(); i++){
+        ptemp->pnext_ = nodes[i];
+        ptemp = ptemp->pnext_;
     }
 }
 
@@ -32,6 +42,7 @@ int LinkList::travese() const {
         std::cout << ptmp->value_ << std::endl;
         ptmp = ptmp->pnext_;
     }while(ptmp !=NULL);
+    std::cout << "traverse finished! " << std::endl;
     return length;
 }
 
@@ -162,4 +173,58 @@ Node* LinkList::get_intersection_node(const LinkList &l1, const LinkList &l2) {
         ptmp2 = ptmp2->pnext_;
     }
     return nullptr;
+}
+
+Node* LinkList::detect_cycle() {
+    Node* pcur = this->head_;
+    Node* fast = this->head_;
+    Node* slow = this->head_;
+    Node* meet = nullptr;
+    while(fast){
+        fast = fast->pnext_;
+        slow = slow->pnext_;
+        if(!fast){
+            return nullptr;
+        }
+        fast = fast->pnext_;
+        if(fast == slow){
+            meet = fast;
+            break;
+        }
+    }
+    if(meet==nullptr){
+        return nullptr;
+    }
+//    meet = meet->pnext_;
+    while(pcur && meet){
+        if(meet == pcur){
+            return meet;
+        }
+        meet = meet->pnext_;
+        pcur = pcur->pnext_;
+    }
+    return nullptr;
+}
+
+void LinkList::partition(int val) {
+    // 小于val的值放在val的前面, 大于等于val的值,放在val的后面. 划分之后, 需要保持原来的相对位置.
+    Node* less_head = new Node(0);
+    Node* more_head = new Node(0);
+    Node* less_tmp = less_head;
+    Node* more_tmp = more_head;
+    Node* pcur = this->head_->pnext_;
+    while(pcur){
+        if(pcur->value_ < val){
+            less_tmp->pnext_ = pcur;
+            less_tmp = pcur;
+        }
+        if(pcur->value_ >= val){
+            more_tmp->pnext_ = pcur;
+            more_tmp = pcur;
+        }
+        pcur = pcur->pnext_;
+    }
+    less_tmp->pnext_ = more_head->pnext_;
+    more_tmp->pnext_ = nullptr;
+    this->head_ = less_head;
 }

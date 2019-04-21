@@ -18,7 +18,7 @@ iostream
 vector
 -
 
-/home/aal/workspace/leetcode/samples/main_tmp.cc
+/home/slam/leetcode/samples/main_tmp.cc
 iostream
 -
 vector
@@ -30,5 +30,5 @@ algorithm
 chrono
 -
 linklist.h
-/home/aal/workspace/leetcode/samples/linklist.h
+/home/slam/leetcode/samples/linklist.h
 

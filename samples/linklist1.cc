@@ -9,16 +9,15 @@
 #include "linklist.h"
 
 int main(int argc, char** argv) {
-    std::vector<int> nums{1,4, 3, 2, 5, 2};
+    std::vector<int> nums{1,8,6,2,5,4,8,3,7};
     LinkList ll;
     ll.create_linklist(nums);
     std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
 
     // inverse
-//    ll.travese();
-//    std::cout << std::endl;
-//    ll.inverse_between(1, 5);
-    ll.partition(3);
+    ll.travese();
+    std::cout << std::endl;
+    ll.inverse_between(1, 5);
     ll.travese();
     std::cout << std::endl;
 

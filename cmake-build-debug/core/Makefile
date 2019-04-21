@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/aal/sw/clion-2018.3.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/aal/sw/clion-2018.3.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aal/workspace/leetcode
+CMAKE_SOURCE_DIR = /home/slam/leetcode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aal/workspace/leetcode/cmake-build-debug
+CMAKE_BINARY_DIR = /home/slam/leetcode/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/aal/workspace/leetcode/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/aal/sw/clion-2018.3.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/aal/sw/clion-2018.3.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/slam/bin/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/aal/workspace/leetcode/cmake-build-debug/CMakeFiles /home/aal/workspace/leetcode/cmake-build-debug/core/CMakeFiles/progress.marks
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aal/workspace/leetcode/cmake-build-debug/CMakeFiles 0
+	cd /home/slam/leetcode/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/slam/leetcode/cmake-build-debug/CMakeFiles /home/slam/leetcode/cmake-build-debug/core/CMakeFiles/progress.marks
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/slam/leetcode/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/clean
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/slam/leetcode/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 core/CMakeFiles/core.dir/rule:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/CMakeFiles/core.dir/rule
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 core/CMakeFiles/core.dir/rule
 .PHONY : core/CMakeFiles/core.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ core: core/CMakeFiles/core.dir/rule
 
 # fast build rule for target.
 core/fast:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/build
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/build
 .PHONY : core/fast
 
 src/linklist.o: src/linklist.cc.o
@@ -131,7 +131,7 @@ src/linklist.o: src/linklist.cc.o
 
 # target to build an object file
 src/linklist.cc.o:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/src/linklist.cc.o
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/src/linklist.cc.o
 .PHONY : src/linklist.cc.o
 
 src/linklist.i: src/linklist.cc.i
@@ -140,7 +140,7 @@ src/linklist.i: src/linklist.cc.i
 
 # target to preprocess a source file
 src/linklist.cc.i:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/src/linklist.cc.i
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/src/linklist.cc.i
 .PHONY : src/linklist.cc.i
 
 src/linklist.s: src/linklist.cc.s
@@ -149,7 +149,7 @@ src/linklist.s: src/linklist.cc.s
 
 # target to generate assembly for a file
 src/linklist.cc.s:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/src/linklist.cc.s
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f core/CMakeFiles/core.dir/build.make core/CMakeFiles/core.dir/src/linklist.cc.s
 .PHONY : src/linklist.cc.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/aal/workspace/leetcode/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/slam/leetcode/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

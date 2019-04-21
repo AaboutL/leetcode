@@ -18,7 +18,9 @@ iostream
 vector
 -
 
-/home/aal/workspace/leetcode/core/src/linklist.cc
+/home/slam/leetcode/core/src/linklist.cc
 linklist.h
-/home/aal/workspace/leetcode/core/src/linklist.h
+-
+linklist.h
+/home/slam/leetcode/core/src/linklist.h
 

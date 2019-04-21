@@ -4,4 +4,4 @@
 core/CMakeFiles/core.dir/src/linklist.cc.o
  ../core/include/linklist.h
  ../core/include/node.h
- /home/aal/workspace/leetcode/core/src/linklist.cc
+ /home/slam/leetcode/core/src/linklist.cc
