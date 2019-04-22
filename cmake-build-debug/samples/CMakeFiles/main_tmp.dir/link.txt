@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -fPIC -g   CMakeFiles/main_tmp.dir/main_linklist.cc.o  -o main_tmp ../core/libcore.a 

@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -fPIC -g   CMakeFiles/main.dir/main_leetcode.cc.o  -o main 
