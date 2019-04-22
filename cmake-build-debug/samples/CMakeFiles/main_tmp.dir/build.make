@@ -57,27 +57,27 @@ include samples/CMakeFiles/main_tmp.dir/progress.make
 # Include the compile flags for this target's objects.
 include samples/CMakeFiles/main_tmp.dir/flags.make
 
-samples/CMakeFiles/main_tmp.dir/main_tmp.cc.o: samples/CMakeFiles/main_tmp.dir/flags.make
-samples/CMakeFiles/main_tmp.dir/main_tmp.cc.o: ../samples/main_tmp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/slam/leetcode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object samples/CMakeFiles/main_tmp.dir/main_tmp.cc.o"
-	cd /home/slam/leetcode/cmake-build-debug/samples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main_tmp.dir/main_tmp.cc.o -c /home/slam/leetcode/samples/main_tmp.cc
+samples/CMakeFiles/main_tmp.dir/main_linklist.cc.o: samples/CMakeFiles/main_tmp.dir/flags.make
+samples/CMakeFiles/main_tmp.dir/main_linklist.cc.o: ../samples/main_linklist.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/slam/leetcode/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object samples/CMakeFiles/main_tmp.dir/main_linklist.cc.o"
+	cd /home/slam/leetcode/cmake-build-debug/samples && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main_tmp.dir/main_linklist.cc.o -c /home/slam/leetcode/samples/main_linklist.cc
 
-samples/CMakeFiles/main_tmp.dir/main_tmp.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_tmp.dir/main_tmp.cc.i"
-	cd /home/slam/leetcode/cmake-build-debug/samples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slam/leetcode/samples/main_tmp.cc > CMakeFiles/main_tmp.dir/main_tmp.cc.i
+samples/CMakeFiles/main_tmp.dir/main_linklist.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_tmp.dir/main_linklist.cc.i"
+	cd /home/slam/leetcode/cmake-build-debug/samples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/slam/leetcode/samples/main_linklist.cc > CMakeFiles/main_tmp.dir/main_linklist.cc.i
 
-samples/CMakeFiles/main_tmp.dir/main_tmp.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_tmp.dir/main_tmp.cc.s"
-	cd /home/slam/leetcode/cmake-build-debug/samples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slam/leetcode/samples/main_tmp.cc -o CMakeFiles/main_tmp.dir/main_tmp.cc.s
+samples/CMakeFiles/main_tmp.dir/main_linklist.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_tmp.dir/main_linklist.cc.s"
+	cd /home/slam/leetcode/cmake-build-debug/samples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/slam/leetcode/samples/main_linklist.cc -o CMakeFiles/main_tmp.dir/main_linklist.cc.s
 
 # Object files for target main_tmp
 main_tmp_OBJECTS = \
-"CMakeFiles/main_tmp.dir/main_tmp.cc.o"
+"CMakeFiles/main_tmp.dir/main_linklist.cc.o"
 
 # External object files for target main_tmp
 main_tmp_EXTERNAL_OBJECTS =
 
-samples/main_tmp: samples/CMakeFiles/main_tmp.dir/main_tmp.cc.o
+samples/main_tmp: samples/CMakeFiles/main_tmp.dir/main_linklist.cc.o
 samples/main_tmp: samples/CMakeFiles/main_tmp.dir/build.make
 samples/main_tmp: core/libcore.a
 samples/main_tmp: samples/CMakeFiles/main_tmp.dir/link.txt

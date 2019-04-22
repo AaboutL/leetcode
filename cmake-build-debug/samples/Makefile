@@ -126,6 +126,21 @@ main_leetcode/fast:
 .PHONY : main_leetcode/fast
 
 # Convenience name for target.
+samples/CMakeFiles/main_stackqueueheap.dir/rule:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 samples/CMakeFiles/main_stackqueueheap.dir/rule
+.PHONY : samples/CMakeFiles/main_stackqueueheap.dir/rule
+
+# Convenience name for target.
+main_stackqueueheap: samples/CMakeFiles/main_stackqueueheap.dir/rule
+
+.PHONY : main_stackqueueheap
+
+# fast build rule for target.
+main_stackqueueheap/fast:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_stackqueueheap.dir/build.make samples/CMakeFiles/main_stackqueueheap.dir/build
+.PHONY : main_stackqueueheap/fast
+
+# Convenience name for target.
 samples/CMakeFiles/main_tmp.dir/rule:
 	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 samples/CMakeFiles/main_tmp.dir/rule
 .PHONY : samples/CMakeFiles/main_tmp.dir/rule
@@ -167,32 +182,59 @@ main_leetcode.cc.s:
 	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_leetcode.dir/build.make samples/CMakeFiles/main_leetcode.dir/main_leetcode.cc.s
 .PHONY : main_leetcode.cc.s
 
-main_tmp.o: main_tmp.cc.o
+main_linklist.o: main_linklist.cc.o
 
-.PHONY : main_tmp.o
+.PHONY : main_linklist.o
 
 # target to build an object file
-main_tmp.cc.o:
-	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_tmp.dir/build.make samples/CMakeFiles/main_tmp.dir/main_tmp.cc.o
-.PHONY : main_tmp.cc.o
+main_linklist.cc.o:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_tmp.dir/build.make samples/CMakeFiles/main_tmp.dir/main_linklist.cc.o
+.PHONY : main_linklist.cc.o
 
-main_tmp.i: main_tmp.cc.i
+main_linklist.i: main_linklist.cc.i
 
-.PHONY : main_tmp.i
+.PHONY : main_linklist.i
 
 # target to preprocess a source file
-main_tmp.cc.i:
-	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_tmp.dir/build.make samples/CMakeFiles/main_tmp.dir/main_tmp.cc.i
-.PHONY : main_tmp.cc.i
+main_linklist.cc.i:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_tmp.dir/build.make samples/CMakeFiles/main_tmp.dir/main_linklist.cc.i
+.PHONY : main_linklist.cc.i
 
-main_tmp.s: main_tmp.cc.s
+main_linklist.s: main_linklist.cc.s
 
-.PHONY : main_tmp.s
+.PHONY : main_linklist.s
 
 # target to generate assembly for a file
-main_tmp.cc.s:
-	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_tmp.dir/build.make samples/CMakeFiles/main_tmp.dir/main_tmp.cc.s
-.PHONY : main_tmp.cc.s
+main_linklist.cc.s:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_tmp.dir/build.make samples/CMakeFiles/main_tmp.dir/main_linklist.cc.s
+.PHONY : main_linklist.cc.s
+
+main_stackqueueheap.o: main_stackqueueheap.cc.o
+
+.PHONY : main_stackqueueheap.o
+
+# target to build an object file
+main_stackqueueheap.cc.o:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_stackqueueheap.dir/build.make samples/CMakeFiles/main_stackqueueheap.dir/main_stackqueueheap.cc.o
+.PHONY : main_stackqueueheap.cc.o
+
+main_stackqueueheap.i: main_stackqueueheap.cc.i
+
+.PHONY : main_stackqueueheap.i
+
+# target to preprocess a source file
+main_stackqueueheap.cc.i:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_stackqueueheap.dir/build.make samples/CMakeFiles/main_stackqueueheap.dir/main_stackqueueheap.cc.i
+.PHONY : main_stackqueueheap.cc.i
+
+main_stackqueueheap.s: main_stackqueueheap.cc.s
+
+.PHONY : main_stackqueueheap.s
+
+# target to generate assembly for a file
+main_stackqueueheap.cc.s:
+	cd /home/slam/leetcode/cmake-build-debug && $(MAKE) -f samples/CMakeFiles/main_stackqueueheap.dir/build.make samples/CMakeFiles/main_stackqueueheap.dir/main_stackqueueheap.cc.s
+.PHONY : main_stackqueueheap.cc.s
 
 # Help Target
 help:
@@ -203,13 +245,17 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main_leetcode"
+	@echo "... main_stackqueueheap"
 	@echo "... main_tmp"
 	@echo "... main_leetcode.o"
 	@echo "... main_leetcode.i"
 	@echo "... main_leetcode.s"
-	@echo "... main_tmp.o"
-	@echo "... main_tmp.i"
-	@echo "... main_tmp.s"
+	@echo "... main_linklist.o"
+	@echo "... main_linklist.i"
+	@echo "... main_linklist.s"
+	@echo "... main_stackqueueheap.o"
+	@echo "... main_stackqueueheap.i"
+	@echo "... main_stackqueueheap.s"
 .PHONY : help
 
 

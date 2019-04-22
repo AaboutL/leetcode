@@ -3,5 +3,7 @@ include_directories(../core/include)
 
 add_executable(main_leetcode main_leetcode.cc)
 
-add_executable(main_tmp main_tmp.cc)
+add_executable(main_tmp main_linklist.cc)
 target_link_libraries(main_tmp core)
+
+add_executable(main_stackqueueheap main_stackqueueheap.cc)

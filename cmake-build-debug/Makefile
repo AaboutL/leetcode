@@ -137,6 +137,19 @@ main_leetcode/fast:
 .PHONY : main_leetcode/fast
 
 #=============================================================================
+# Target rules for targets named main_stackqueueheap
+
+# Build rule for target.
+main_stackqueueheap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_stackqueueheap
+.PHONY : main_stackqueueheap
+
+# fast build rule for target.
+main_stackqueueheap/fast:
+	$(MAKE) -f samples/CMakeFiles/main_stackqueueheap.dir/build.make samples/CMakeFiles/main_stackqueueheap.dir/build
+.PHONY : main_stackqueueheap/fast
+
+#=============================================================================
 # Target rules for targets named main_tmp
 
 # Build rule for target.
@@ -159,6 +172,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... core"
 	@echo "... main_leetcode"
+	@echo "... main_stackqueueheap"
 	@echo "... main_tmp"
 .PHONY : help
 

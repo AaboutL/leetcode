@@ -6,4 +6,5 @@
 /home/slam/leetcode/cmake-build-debug/samples/CMakeFiles/rebuild_cache.dir
 /home/slam/leetcode/cmake-build-debug/samples/CMakeFiles/edit_cache.dir
 /home/slam/leetcode/cmake-build-debug/samples/CMakeFiles/main_leetcode.dir
+/home/slam/leetcode/cmake-build-debug/samples/CMakeFiles/main_stackqueueheap.dir
 /home/slam/leetcode/cmake-build-debug/samples/CMakeFiles/main_tmp.dir
