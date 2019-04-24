@@ -18,35 +18,25 @@
  *
  */
 
-
-bool cmp(const std::pair<int, int>& a, const std::pair<int, int>& b){
-    return a.first < b.first;
-}
-
-int find_min_arrow_shots(std::vector<std::pair<int, int>>& points){
-    if(points.size() == 0)
-        return 0;
-    std::sort(points.begin(), points.end(), cmp);
-    int shoot_num = 1;
-    int shoot_begin = points[0].first;
-    int shoot_end = points[0].second;
-    for (int i = 1; i< points.size(); i++){
-        if(shoot_end >= points[i].first){
-            shoot_begin = points[i].first;
-            if(shoot_end > points[i].second){
-                shoot_end = points[i].second;
-            }
-        }
-        else{
-            shoot_num++;
-            shoot_begin = points[i].first;
-            shoot_end = points[i].second;
-        }
-    }
-    return shoot_num++;
+int min_jump(std::vector<int>& nums) {
+   if(nums.size() < 2)
+       return 0;
+   int current_max_index = nums[0];
+   int pre_max_max_index = nums[0];
+   int min_jump = 1;
+   for (int i = 0; i < nums.size(); i++){
+       if(i > current_max_index){
+           min_jump++;
+           current_max_index = pre_max_max_index;
+       }
+       if(pre_max_max_index < nums[i] + i){
+           pre_max_max_index = nums[i] + i;
+       }
+   }
+   return min_jump;
 }
 
 int main(int argc, char** argv) {
-    std::vector<std::pair<int, int>> nums{{10, 16}, {2, 8}, {1, 6}, {7, 12}};
-    std::cout << find_min_arrow_shots(nums) << std::endl;
+    std::vector<int> nums{2, 3, 1, 1, 4};
+    std::cout << min_jump(nums) << std::endl;
 }
