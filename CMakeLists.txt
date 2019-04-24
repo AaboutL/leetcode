@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(leetcode)
+project(my_code)
 set(VERSION 1.1.0)
 
 if(NOT CMAKE_BUILD_TYPE)
