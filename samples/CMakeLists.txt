@@ -11,3 +11,5 @@ add_executable(main_stackqueueheap main_stackqueueheap.cc)
 add_executable(main_greedy main_greedy.cpp)
 
 add_executable(main_recursion_iteration main_recursion_backtracking.cpp)
+
+add_executable(reverse_linklist reverse_linklist.cc)
